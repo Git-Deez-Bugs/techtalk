@@ -1,0 +1,69 @@
+.your-message,
+.their-message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.message-text {
+  padding: 0.875rem 1rem;
+  margin: 0 0.5rem 0.25rem 0.5rem;
+  max-width: 300px;
+  white-space: pre-line;
+  color: white;
+  word-wrap: break-word;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.your-message .message-text {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 1.125rem 1.125rem 0.25rem 1.125rem;
+}
+
+.their-message .message-text {
+  align-self: flex-start;
+  background-color: #6b7280;
+  border-radius: 1.125rem 1.125rem 1.125rem 0.25rem;
+}
+
+/* Timestamp styling */
+.your-message > div:last-child,
+.their-message > div:last-child {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0 0.5rem;
+  padding: 0 0.25rem;
+}
+
+.your-message > div:last-child {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.their-message > div:last-child {
+  align-self: flex-start;
+  text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .message-text {
+    max-width: 250px;
+    padding: 0.75rem 0.875rem;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100; /* Keep it below the header's z-index of 900 */
+}
+.header-bg {
+  background-color: white;
+  z-index: 1000;
+}

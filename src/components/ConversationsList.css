@@ -1,0 +1,50 @@
+/* Sidebar */
+.conversations-list {
+  flex-shrink: 0;
+  width: 350px;
+  height: 100%;
+  background: #2c2c2c;
+  color: white;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.conversation-items {
+  overflow-y: auto;
+  flex: 1;
+  
+  padding-left: .7rem;
+  padding-right: .7rem;
+}
+
+.searchbar-container {
+  position: relative;
+  padding: 1rem;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.conversation-searchbar {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: none;
+  border-bottom: 1px solid #444;
+  background: #3a3a3a;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.no-results {
+  padding: 1rem;
+  text-align: center;
+  color: #888;
+}
+
